@@ -22,7 +22,7 @@ int main()
 	int i = 1;
 	while(1) // IF the player enter wrong data, give another chance. 
 	{
-		printf("Enter the total number of player : ");
+		printf("Enter the total number of player: ");
 		scanf("%d",&players);
 		
 		i += 1;
@@ -45,7 +45,7 @@ int main()
 		}
 	}
 	
-	printf("\n\nEnter the value for each point:");
+	printf("\n\nEnter the value for each point: ");
 	scanf("%d", &point_value);
 	printf("\n");
 	printf("---------------------------------------------------\n");
@@ -54,7 +54,7 @@ int main()
 	struct player_info player[players];
 	for(i = 0; i < players; i++)
 	{		
-		printf("Enter the point collected by player %d :",i+1);
+		printf("Enter the point collected by player %d : ",i+1);
 		scanf("%d",&player[i].point);// if the player has not seen the put -1 value
 		/*if(seen_unseen == -1)
 		{
@@ -76,7 +76,7 @@ int main()
 		
 	}
 	
-	printf("\nEnter the player number who had shown and finished the game :");
+	printf("\nEnter the player number who had shown and finished the game : ");
 	scanf("%d",&ender);
 	
 	player[ender -1].point += 3;
@@ -84,7 +84,7 @@ int main()
 	total_unseen = total_point +10;//  for player who haven't seen the Main card point.
 	printf("\n---------------------------------------------------\n\n");
 	printf("Total points for seen player is %d\n", total_seen);
-	printf("Total points for unseen player is %d\n\n",total_unseen);
+	printf("Total points for unseen player is %d\n",total_unseen);
 	printf("\n---------------------------------------------------\n");
 	for( i = 0; i < players; i++)
 	{
