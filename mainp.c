@@ -20,7 +20,7 @@ int main()
 	printf("---------------------------------------------------\n");
 	printf("************ MARRIAGE POINT COUNTER ***************\n\n");
 	int i = 1;
-	while(1) // IF the player enter worng data, give another chance. 
+	while(1) // IF the player enter wrong data, give another chance. 
 	{
 		printf("Enter the total number of player : ");
 		scanf("%d",&players);
@@ -50,7 +50,7 @@ int main()
 	printf("\n");
 	printf("---------------------------------------------------\n");
 	printf("\n*** if the player has not seen enter -1 value***\n\n");
-	//initating the total player and gathering the information.
+	//initiating the total player and gathering the information.
 	struct player_info player[players];
 	for(i = 0; i < players; i++)
 	{		
@@ -76,12 +76,12 @@ int main()
 		
 	}
 	
-	printf("\nEnter the player number who had shown and fininsed the game :");
+	printf("\nEnter the player number who had shown and finished the game :");
 	scanf("%d",&ender);
 	
 	player[ender -1].point += 3;
-	total_seen = total_point + 3; // for players who have shown the maal point.
-	total_unseen = total_point +10;//  for player who haven't seen the maal point.
+	total_seen = total_point + 3; // for players who have seen the Main card point.
+	total_unseen = total_point +10;//  for player who haven't seen the Main card point.
 	printf("\n---------------------------------------------------\n\n");
 	printf("Total points for seen player is %d\n", total_seen);
 	printf("Total points for unseen player is %d\n\n",total_unseen);
